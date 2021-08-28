@@ -201,5 +201,6 @@ It can still be built and compiled on any target triple that it supports, VM or 
 
 ### Some caution
 
-exa display properly on nerd fonts only
-nerd fonts with mono support may cause small icons as well as some fonts with window compatible
+`exa` display properly on nerd fonts only
+
+Nerd fonts with mono support may cause small icons as well as some fonts with window compatible
