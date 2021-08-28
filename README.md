@@ -101,79 +101,6 @@ Some of the options accept parameters:
 exa is available for macOS and Linux.
 More information on how to install exa is available on [the Installation page](https://the.exa.website/install).
 
-### Alpine Linux
-
-On Alpine Linux, [enable community repository](https://wiki.alpinelinux.org/wiki/Enable_Community_Repository) and install the [`exa`](https://pkgs.alpinelinux.org/package/edge/community/x86_64/exa) package.
-
-    $ apk add exa
-
-### Arch Linux
-
-On Arch, install the [`exa`](https://www.archlinux.org/packages/community/x86_64/exa/) package.
-
-    $ pacman -S exa
-
-### Android / Termux
-
-On Android / Termux, install the [`exa`](https://github.com/termux/termux-packages/tree/master/packages/exa) package.
-
-    $ pkg install exa
-
-### Debian
-
-On Debian, install the [`exa`](https://packages.debian.org/unstable/exa) package.
-For now, exa is in the _unstable_ repository.
-
-    $ apt install exa
-
-### Fedora
-
-On Fedora, install the [`exa`](https://src.fedoraproject.org/modules/exa) package.
-
-    $ dnf install exa
-
-### Gentoo
-
-On Gentoo, install the [`sys-apps/exa`](https://packages.gentoo.org/packages/sys-apps/exa) package.
-
-    $ emerge sys-apps/exa
-
-### Homebrew
-
-If you’re using [Homebrew](https://brew.sh/) on macOS, install the [`exa`](http://formulae.brew.sh/formula/exa) formula.
-
-    $ brew install exa
-
-### MacPorts
-
-If you're using [MacPorts](https://www.macports.org/) on macOS, install the [`exa`](https://ports.macports.org/port/exa/summary) port.
-
-    $ port install exa
-
-### Nix
-
-On nixOS, install the [`exa`](https://github.com/NixOS/nixpkgs/blob/master/pkgs/tools/misc/exa/default.nix) package.
-
-    $ nix-env -i exa
-
-### openSUSE
-
-On openSUSE, install the [`exa`](https://software.opensuse.org/package/exa) package.
-
-    $ zypper install exa
-
-### Ubuntu
-
-On Ubuntu 20.10 (Groovy Gorilla) and later, install the [`exa`](https://packages.ubuntu.com/groovy/exa) package.
-
-    $ sudo apt install exa
-
-### Void Linux
-
-On Void Linux, install the [`exa`](https://github.com/void-linux/void-packages/blob/master/srcpkgs/exa/template) package.
-
-    $ xbps-install -S exa
-
 ### Manual installation from GitHub
 
 Compiled binary versions of exa are uploaded to GitHub when a release is made.
@@ -271,3 +198,8 @@ Once this is done, you can SSH in, and build and test:
 Of course, the drawback of having a standard development environment is that you stop noticing bugs that occur outside of it.
 For this reason, Vagrant isn’t a *necessary* development step — it’s there if you’d like to use it, but exa still gets used and tested on other platforms.
 It can still be built and compiled on any target triple that it supports, VM or no VM, with `cargo build` and `cargo test`.
+
+### Some caution
+
+exa display properly on nerd fonts only
+nerd fonts with mono support may cause small icons as well as some fonts with window compatible
